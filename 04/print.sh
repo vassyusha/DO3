@@ -18,7 +18,7 @@ FONT_COLORS=(
     [6]="\033[30m"   # black font
 )
 
-export COLOR_NAMES=(
+COLOR_NAMES=(
     [1]="white"
     [2]="red"
     [3]="green"
@@ -29,10 +29,10 @@ export COLOR_NAMES=(
 
 RESET="\033[0m"
 
-export DEFAULT_COLUMN1_BG=1   # white
-export DEFAULT_COLUMN1_FONT=6 # black
-export DEFAULT_COLUMN2_BG=4   # blue
-export DEFAULT_COLUMN2_FONT=1 # white
+DEFAULT_COLUMN1_BG=1   # white
+DEFAULT_COLUMN1_FONT=6 # black
+DEFAULT_COLUMN2_BG=4   # blue
+DEFAULT_COLUMN2_FONT=1 # white
 
 read_config() {
     local config_file="config.conf"
@@ -52,16 +52,16 @@ read_config() {
         
         case "$key" in
             column1_background)
-                export COLUMN1_BG="$value"
+                COLUMN1_BG="$value"
                 ;;
             column1_font_color)
-                export COLUMN1_FONT="$value"
+                COLUMN1_FONT="$value"
                 ;;
             column2_background)
-                export COLUMN2_BG="$value"
+                COLUMN2_BG="$value"
                 ;;
             column2_font_color)
-                export COLUMN2_FONT="$value"
+                COLUMN2_FONT="$value"
                 ;;
         esac
     done < "$config_file"
@@ -85,10 +85,10 @@ check_colors() {
     return $error
 }
 
-export COLUMN1_BG="$DEFAULT_COLUMN1_BG"
-export COLUMN1_FONT="$DEFAULT_COLUMN1_FONT"
-export COLUMN2_BG="$DEFAULT_COLUMN2_BG"
-export COLUMN2_FONT="$DEFAULT_COLUMN2_FONT"
+COLUMN1_BG="$DEFAULT_COLUMN1_BG"
+COLUMN1_FONT="$DEFAULT_COLUMN1_FONT"
+COLUMN2_BG="$DEFAULT_COLUMN2_BG"
+COLUMN2_FONT="$DEFAULT_COLUMN2_FONT"
 
 read_config
 
