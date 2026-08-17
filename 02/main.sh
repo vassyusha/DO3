@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash ./get_info.sh
+source ./get_info.sh
 
 OUTPUT="HOSTNAME = $HOSTNAME
 TIMEZONE = $TIMEZONE
