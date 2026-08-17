@@ -52,16 +52,16 @@ read_config() {
         
         case "$key" in
             column1_background)
-                COLUMN1_BG="$value"
+                export COLUMN1_BG="$value"
                 ;;
             column1_font_color)
-                COLUMN1_FONT="$value"
+                export COLUMN1_FONT="$value"
                 ;;
             column2_background)
-                COLUMN2_BG="$value"
+                export COLUMN2_BG="$value"
                 ;;
             column2_font_color)
-                COLUMN2_FONT="$value"
+                export COLUMN2_FONT="$value"
                 ;;
         esac
     done < "$config_file"
