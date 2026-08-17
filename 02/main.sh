@@ -49,4 +49,5 @@ SPACE_ROOT_FREE = ${SPACE_ROOT_FREE} MB"
 
 echo "$OUTPUT"
 
-echo "$OUTPUT" | bash ./to_file.sh
+export OUTPUT_DATA="$OUTPUT"
+bash ./to_file.sh
