@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OUTPUT=$1
+OUTPUT=$(cat)
 
 read -p "Записать данные в файл? (Y/N): " ANSWER
 
