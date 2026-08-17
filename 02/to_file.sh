@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OUTPUT = $1
+OUTPUT=$1
 
 read -p "Записать данные в файл? (Y/N): " ANSWER
 
