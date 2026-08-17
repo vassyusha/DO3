@@ -6,7 +6,7 @@ if [[ $# -ne 4 ]]; then
     exit 1
 fi
 
-bash ./check.sh "$1" "$2" "$3" "$4"
+bash ./check.sh "$1" "$2" "$3" "$4" || exit 1
 
 source ./get_info.sh
 
