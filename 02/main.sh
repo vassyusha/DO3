@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash ./get_info.sh
+
 OUTPUT="HOSTNAME = $HOSTNAME
 TIMEZONE = $TIMEZONE
 USER = $USER
