@@ -126,4 +126,4 @@ print_colored "SPACE_ROOT_FREE" "${SPACE_ROOT_FREE} MB" "$COLUMN1_BG" "$COLUMN1_
 
 echo
 
-bash ./extra.sh
+source ./extra.sh
