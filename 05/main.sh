@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source "./utils.sh"
-source "./folders.sh"
-source "./files.sh"
-source "$SCRIPT_DIR/lib/top_files.sh"
+source ./utils.sh
+source ./folders.sh
+source ./files.sh
+source ./top_files.sh
 
 START_TIME=$(date +%s.%N)
 
